@@ -120,6 +120,10 @@ section{
 }
 
 @media (max-width:400px){
+    section{
+        margin-top: 120px;
+    }
+
     .mainLogo .mainLogoContent{
         border-radius: 20px;
     width: 40px;
@@ -136,14 +140,24 @@ section{
     .searchContent::placeholder{
         font-size: 10px;
     }
+    .search .searchImgContent{
+        width: 18px;
+    }
     .button .buttonContent{
         font-size: 10px;
+    }
+    .search{
+        width: 80%;
     }
     .logo .contentLogo{
         width: 100px;
     }
 }
 @media (min-width:401px) and (max-width:999px){
+    .logo{
+        margin-top: 60px;
+    }
+
     .mainLogo .mainLogoContent{
         border-radius: 16px;
     width: 32px;
@@ -160,17 +174,24 @@ section{
     .searchContent::placeholder{
         font-size: 15px;
     }
+    .search .searchImgContent{
+        width: 24px;
+    }
     .button .buttonContent{
         font-size: 13px;
     }
     .search{
-        width: 60%;
+        width: 70%;
     }
     .logo .contentLogo{
         width: 120px;
     }
 }
 @media (min-width:1000px){
+    section{
+        margin-top: 60px;
+    }
+
     .searchContent::placeholder{
         font-size: 20px;
     }
