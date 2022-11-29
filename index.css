@@ -154,7 +154,7 @@ section{
 
 /*RESPONSIVE DESIGN*/
 
-@media (max-width:400px){
+@media (max-width:419px){
     /*whole body*/
     section{
         margin-top: 150px;
@@ -192,7 +192,7 @@ section{
     }
 }
 
-@media (min-width:401px) and (max-width:999px){
+@media (min-width:420px) and (max-width:999px){
     /*whole body*/
     section{
         margin-top: 110px;
