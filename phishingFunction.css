@@ -9,27 +9,13 @@ p{
 }
 /*header*/
 nav{
-    padding: 10px 0px;
-    height: 62px;
-    background-color: #03045e;
-    display: flex;
-    flex-direction: row;
-}
-.logoImg{
-    margin-left: 20px;
-}
-.logoImgContent{
-    width: 50px;
-}
-
-/*new header */
-nav{
     background-color: #03045e; /*former color rgb(238, 238, 238)*/
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 10px 0px;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    width: 100%;
 }
 
 /*logo*/
@@ -77,9 +63,6 @@ nav{
     color: rgb(236, 236, 236);
 }
 
-.invisible{
-    flex: 1;
-}
 /*body*/
 section{
     padding: 0px 30px 0px 30px;
@@ -154,6 +137,7 @@ section{
     width: 200px;
     padding: 20px;
     margin-right: 20px;
+    
 
 }
 .box1{
@@ -254,3 +238,203 @@ section{
     color: #03045e;
 }
 
+/*RESPONSIVE DESIGN*/
+
+@media (max-width:419px){
+
+    /*header*/
+    .mainLogo .mainLogoContent{
+        border-radius: 20px;
+    width: 40px;
+    }
+    .menus .buttonPhishing{
+        width: 100px;
+        font-size: 10px;
+    }
+    .menus .buttonBenign{
+        width: 100px;
+        font-size: 10px;
+    }
+
+
+    /*body*/
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container{
+        width: 100%;
+        align-items: center;
+        padding-right: 0px;
+        
+    }
+
+    .container .title{
+        font-size: 14px;
+    }
+    .contentTable{
+        align-items: center;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .contentTable thead tr th:nth-child(1){
+        width: 0px;
+    }
+    .contentTable thead tr th:nth-child(3){
+        width: 70px;
+    }
+
+    .rightContainer{
+        width: 80%;
+        align-items: center;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box1{
+        width: 100%;
+        padding: 20px;
+    }
+    .titleText{
+        font-size: 13px;
+    }
+    .textBody{
+        font-size: 11px;
+    }
+    .box2{
+        width: 100%;
+    }
+    .box2 .backButton{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+
+    /*page Numbers*/
+    .pageNumber .numberText{
+        font-size: 10px;
+    }
+    .pageNumber .numberActive{
+        font-size: 10px;
+    }
+    .pageNumber .number{
+        font-size: 10px;
+    }
+    .pageNumber .buttonPrevious, .buttonNext{
+        font-size: 10px;
+    }
+
+}
+@media (min-width:420px) and (max-width:999px){
+
+    /*header*/
+    .mainLogo .mainLogoContent{
+        border-radius: 16px;
+    width: 32px;
+    }
+    .menus .buttonPhishing{
+        width: 120px;
+        font-size: 13px;
+    }
+    .menus .buttonBenign{
+        width: 120px;
+        font-size: 13px;
+    }
+
+
+    /*body*/
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container{
+        width: 100%;
+        align-items: center;
+        padding-right: 0px;
+        
+    }
+
+    .container .title{
+        font-size: 16px;
+    }
+
+
+    .contentTable{
+        align-items: center;
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .contentTable thead tr th:nth-child(1){
+        width: 0px;
+    }
+    .contentTable thead tr th:nth-child(3){
+        width: 100px;
+    }
+
+
+
+
+    .rightContainer{
+        width: 80%;
+        align-items: center;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box1{
+        width: 100%;
+    }
+    .titleText{
+        font-size: 16px;
+    }
+    .textBody{
+        font-size: 13px;
+    }
+    .box2{
+        width: 100%;
+    }
+    .box2 .backButton{
+        margin-top: 30px;
+        font-size: 13px;
+    }
+
+
+
+
+
+
+    /*page Numbers*/
+    .pageNumber .numberText{
+        font-size: 13px;
+    }
+    .pageNumber .numberActive{
+        font-size: 13px;
+    }
+    .pageNumber .number{
+        font-size: 13px;
+    }
+    .pageNumber .buttonPrevious, .buttonNext{
+        font-size: 13px;
+    }
+
+}
+@media (min-width:1000px){
+
+
+    /*search*/
+    .searchContent::placeholder{
+        font-size: 20px;
+    }
+    .button .buttonContent{
+        font-size: 16px;
+    }
+    .logo .contentLogo{
+        width: 150px;
+    }
+}
