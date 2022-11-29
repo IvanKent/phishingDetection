@@ -45,13 +45,13 @@
                 alt="" class="searchImgContent">
 
                 <input class="searchContent" 
-                type="text" name="" id="" 
+                type="text" name="" id="link" 
                 placeholder="Input suspicious links here."> 
         </div>
 
         <div class="button">
-            <a href="detectBenign.html">
-                <button class="buttonContent" >
+            <a href="">
+                <button class="buttonContent" onclick="getContent()">
                     DETECT
                 </button>
             </a>  
@@ -70,5 +70,34 @@
 
     </footer>
 
+
+    <script>
+        
+        contents.push('contentt');
+
+        function getContent(){
+            let textbox = document.getElementById('link');
+            let title = textbox.value;
+
+            let contents = ['google.com', 'facebook.com', 'youtube.com'];
+
+            for(let i=0; i<3; i++){
+                if(title == contents[i]){
+                window.open("detectBenign.html");
+            }
+            else{
+                window.open("detectPhishing.html");
+            }
+            }
+            
+        }
+        
+
+        contents.forEach(function (anotherContent){
+            let element = document.createElement('div');
+            element.innerText = anohterContent;
+            document.body.appendChild(element);
+        });
+    </script>
 </body>
 </html>
