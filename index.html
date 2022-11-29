@@ -84,20 +84,15 @@
             for(let i=0; i<3; i++){
                 if(title == contents[i]){
                 window.open("detectBenign.html");
+                }
+                else if(title == "a"){
+                    window.open("detectInvalid.html");
+                }
+                else{
+                    window.open("detectPhishing.html");
+                }
             }
-            else{
-                window.open("detectPhishing.html");
-            }
-            }
-            
         }
-        
-
-        contents.forEach(function (anotherContent){
-            let element = document.createElement('div');
-            element.innerText = anohterContent;
-            document.body.appendChild(element);
-        });
     </script>
 </body>
 </html>

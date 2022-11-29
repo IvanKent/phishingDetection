@@ -151,8 +151,8 @@ section{
     margin: 0px;
     margin-bottom: 10px;
 }
-.phishingText{
-    color: rgb(165, 2, 2);
+.invalidText{
+    color: gray;
     font-weight: bold;
     font-size: 20px;
 }
@@ -195,7 +195,7 @@ section{
     margin-right: 20px;
 }
 .buttonContent:hover{
-    background-color: rgb(165, 2, 2);
+    background-color: gray;
     color: rgb(236, 236, 236);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
@@ -214,7 +214,7 @@ section{
     cursor: pointer;
 }
 .feedbackButtonContent:hover{
-    background-color: rgb(165, 2, 2);
+    background-color: gray;
     color: rgb(236, 236, 236);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
@@ -271,7 +271,7 @@ section{
     .detectionContainer .detectionResult .resultText{
         font-size: 12px;
     }
-    .detectionContainer .detectionResult .phishingText{
+    .detectionContainer .detectionResult .invalidText{
         font-size: 12px;
     }
     .detectionContainer .detectionResult .warningText{
@@ -350,7 +350,7 @@ section{
     .detectionContainer .detectionResult .resultText{
         font-size: 16px;
     }
-    .detectionContainer .detectionResult .phishingText{
+    .detectionContainer .detectionResult .invalidText{
         font-size: 16px;
     }
     .detectionContainer .detectionResult .warningText{
