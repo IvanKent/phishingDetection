@@ -119,12 +119,45 @@ section{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .15);
 }
 
+/*button*/
+.button{
+    flex: 1;
+}
+.buttonContent{
+    color: rgb(236, 236, 236);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #03045e;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color .3s, background-color .3s, border .3s, box-shadow .3s, height .3s;
+    cursor: pointer;
+}
+.buttonContent:hover{
+    background-color: rgb(236, 236, 236);
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+.buttonContent1{
+    opacity: 0;
+    color: rgb(236, 236, 236);
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #03045e;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color .3s, background-color .3s, border .3s, box-shadow .3s, height .3s;
+    cursor: pointer;
+}
+
 /*RESPONSIVE DESIGN*/
 
 @media (max-width:400px){
     /*whole body*/
     section{
-        margin-top: 120px;
+        margin-top: 150px;
     }
 
     /*header*/
@@ -162,7 +195,7 @@ section{
 @media (min-width:401px) and (max-width:999px){
     /*whole body*/
     section{
-        margin-top: 60px;
+        margin-top: 110px;
     }
 
     /*header*/
@@ -213,37 +246,3 @@ section{
         width: 150px;
     }
 }
-
-/*button*/
-.button{
-    flex: 1;
-}
-.buttonContent{
-    color: rgb(236, 236, 236);
-    padding: 10px 30px;
-    border: none;
-    border-radius: 10px;
-    background-color: #03045e;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color .3s, background-color .3s, border .3s, box-shadow .3s, height .3s;
-    cursor: pointer;
-}
-.buttonContent:hover{
-    background-color: rgb(236, 236, 236);
-    color: black;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-}
-.buttonContent1{
-    opacity: 0;
-    color: rgb(236, 236, 236);
-    padding: 10px 30px;
-    border: none;
-    border-radius: 10px;
-    background-color: #03045e;
-    font-size: 16px;
-    font-weight: bold;
-    transition: color .3s, background-color .3s, border .3s, box-shadow .3s, height .3s;
-    cursor: pointer;
-}
-
