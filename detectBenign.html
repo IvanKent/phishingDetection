@@ -51,7 +51,7 @@
                 placeholder="Input suspicious links here."> 
         </div>
         
-        <div class="detectionContainer">
+        <div class="detectionContainer" id="temp">
             <div class="detectionResult">
                 <p class="resultText">The link you entered is 
                 <span class="benignText"> SAFE.</span> 
@@ -78,7 +78,7 @@
                 </div>
                 <div class="content">
                     <div class="popUpSearchContainer">
-                        <input type="text" class="inputText" placeholder="Please enter comments/suggestions. Thank you!">
+                        <input type="text" class="inputText" placeholder="Please enter comments/suggestions. Thank you!" id="link">
                     </div>
                     <div class="submit" onclick="closePopUp()">
                         SUBMIT
@@ -96,7 +96,7 @@
             let textbox = document.getElementById('link');
             let title = textbox.value;
 
-                if(title == "google.com"){
+                if(title == "google.com" || title =="youtube.com"){
                 window.open("detectBenign.html");
                 }
                 else if(title == ""){
@@ -109,9 +109,11 @@
 
         function openPopUp(){
             document.getElementById("pop").style.visibility = "visible";
+            document.getElementById("temp").style.visibility = "hidden";
         }
         function closePopUp(){
             document.getElementById("pop").style.visibility = "hidden";
+            document.getElementById("temp").style.visibility = "visible";
         }
     </script>
 </body>

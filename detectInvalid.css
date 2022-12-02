@@ -227,12 +227,12 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    top: 50%;
+    position: absolute;
     background-color: #03045e;
+    margin-top: -10px;
     opacity: .95;
     width: 50%;
-    height: 45%;
+    height: 30%;
     z-index: 200;
     border-radius: 10px;
     margin: auto;
@@ -251,8 +251,8 @@ section{
     transition: background-color .3s, color .3s, box-shadow .3s;
 }
 .close:hover{
-    background-color: #03045e;
-    color: white;
+    background-color: white;
+    color: #03045e;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 .content{
@@ -282,7 +282,7 @@ section{
     font-size: 20px;
     outline: none;
     cursor: text;
-    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .submit{
@@ -298,7 +298,7 @@ section{
     cursor: pointer;
     background-color: white;
     margin: auto;
-    margin-top: -30px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 .submit:hover{
@@ -379,14 +379,32 @@ section{
         font-size: 10px;
         margin-bottom: 15px;
         margin-left: 20px;
-        
-
     }
     .buttons .feedbackButtonContent{
         font-size: 10px;
     }
-}
 
+    /*pop Up*/
+    .popUp{
+        margin-top:-60px;
+        width: 80%;
+        height: 30%;
+    }
+    .content{
+        width: 100%;
+    }
+    .popUpSearchContainer{
+        width: 100%;
+    }
+    .inputText{
+        width: 90%;
+        font-size: 10px;
+    }
+    .submit{
+        width: 10%;
+        font-size: 10px;
+    }
+}
 
 @media (min-width:420px) and (max-width:999px){
     /*whole body*/
@@ -461,6 +479,28 @@ section{
     .buttons .feedbackButtonContent{
         font-size: 12px;
         padding: 10px 5px;
+    }
+
+    /*pop Up*/
+    .popUp{
+        margin-top: -30px;
+        width: 70%;
+        height: 30%;
+    }
+    .content{
+        width: 100%;
+    }
+    .popUpSearchContainer{
+        width: 100%;
+    }
+    .inputText{
+        width: 90%;
+        font-size: 14px;
+    }
+    .submit{
+        width: 10%;
+        font-size: 12px;
+        text-align: center;
     }
 }
 @media (min-width:1000px){
