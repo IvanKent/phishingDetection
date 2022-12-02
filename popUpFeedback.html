@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detector</title>
+    <link rel="stylesheet" href="popUpFeedback.css">
+    
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="mainLogo">
+                <a href="index.html">
+                    <img src="phishinglogo.png" alt="" class="mainLogoContent">
+                </a>  
+            </div>
+            <div class="menus">
+                <a href="phishingFunction.html">
+                    <button class="buttonPhishing">
+                        Phishing
+                    </button>
+                </a>  
+            </div>
+            <div class="menus">
+                <a href="benignFunction.html">
+                    <button class="buttonBenign">
+                        Benign
+                    </button>
+                </a>
+            </div>
+            <div class="invisible">
+
+            </div>
+        </nav>
+    </header>
+
+
+    
+    <section>
+        
+
+
+
+        <div class="logo">
+            <img src="phishinglogo.png" alt="" class="contentLogo">
+        </div>
+
+        <div class="search">
+                <img src="barcode-scanner.png" 
+                alt="" class="searchImgContent">
+
+                <input class="searchContent" 
+                type="text" name="" id="" 
+                placeholder="Input suspicious links here."> 
+        </div>
+        
+
+        <div class="detectionContainer">
+            <div class="detectionResult">
+                <p class="resultText">The link you entered is 
+                <span class="benignText"> SAFE.</span> 
+                </p>
+                <p class="warningText">
+                    THE INFORMATION IS SECURED!
+                </p>
+            </div>
+            
+            <div class="buttonContainer">
+                <div class="buttons"> 
+                    <button class="buttonContent" >
+                        DETECT ANOTHER LINK
+                    </button>
+                    <button class="feedbackButtonContent" onclick="openPopUp()">
+                        FEEDBACK
+                    </button>
+                </div>
+            </div>
+        
+        </div>
+        <div class="popUp" id="pop">
+            <div class="close" onclick="closePopUp()">
+                X
+            </div>
+            <div class="content">
+                <div class="popUpSearchContainer">
+                    <input type="text" class="inputText" placeholder="Please enter comments/suggestions. Thank you!">
+                </div>
+                <div class="submit" onclick="closePopUp()">
+                    SUBMIT
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+    
+    <script>
+        function openPopUp(){
+            document.getElementById("pop").style.visibility = "visible";
+        }
+        function closePopUp(){
+            document.getElementById("pop").style.visibility = "hidden";
+        }
+    </script>
+</body>
+</html>

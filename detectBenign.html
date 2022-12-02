@@ -35,9 +35,9 @@
 
             </div>
         </nav>
-    </header>
-
+    </header> 
     <section>
+        
         <div class="logo">
             <img src="phishinglogo.png" alt="" class="contentLogo">
         </div>
@@ -51,7 +51,6 @@
                 placeholder="Input suspicious links here."> 
         </div>
         
-
         <div class="detectionContainer">
             <div class="detectionResult">
                 <p class="resultText">The link you entered is 
@@ -64,21 +63,56 @@
             
             <div class="buttonContainer">
                 <div class="buttons"> 
-                    <button class="buttonContent" >
+                    <button class="buttonContent" onclick="getContents()">
                         DETECT ANOTHER LINK
                     </button>
-                    <button class="feedbackButtonContent">
+                    <button class="feedbackButtonContent" onclick="openPopUp()">
                         FEEDBACK
                     </button>
                 </div>
             </div>
-
+        
+            <div class="popUp" id="pop">
+                <div class="close" onclick="closePopUp()">
+                    X
+                </div>
+                <div class="content">
+                    <div class="popUpSearchContainer">
+                        <input type="text" class="inputText" placeholder="Please enter comments/suggestions. Thank you!">
+                    </div>
+                    <div class="submit" onclick="closePopUp()">
+                        SUBMIT
+                    </div>
+                    
+                </div>
+            </div>
         </div>
+          
     </section>
+    
+    <script>
 
-    <footer>
+        function getContents(){
+            let textbox = document.getElementById('link');
+            let title = textbox.value;
 
-    </footer>
+                if(title == "google.com"){
+                window.open("detectBenign.html");
+                }
+                else if(title == ""){
+                    window.open("detectInvalid.html");
+                }
+                else{
+                    window.open("detectPhishing.html");
+                }
+        }
 
+        function openPopUp(){
+            document.getElementById("pop").style.visibility = "visible";
+        }
+        function closePopUp(){
+            document.getElementById("pop").style.visibility = "hidden";
+        }
+    </script>
 </body>
 </html>

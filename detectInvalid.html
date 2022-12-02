@@ -67,18 +67,36 @@
                     <button class="buttonContent" >
                         DETECT ANOTHER LINK
                     </button>
-                    <button class="feedbackButtonContent">
+                    <button class="feedbackButtonContent" onclick="openPopUp()">
                         FEEDBACK
                     </button>
                 </div>
             </div>
 
+            <div class="popUp" id="pop">
+                <div class="close" onclick="closePopUp()">
+                    X
+                </div>
+                <div class="content">
+                    <div class="popUpSearchContainer">
+                        <input type="text" class="inputText" placeholder="Please enter comments/suggestions. Thank you!">
+                    </div>
+                    <div class="submit" onclick="closePopUp()">
+                        SUBMIT
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-
-    </footer>
-
+    <script>
+        function openPopUp(){
+            document.getElementById("pop").style.visibility = "visible";
+        }
+        function closePopUp(){
+            document.getElementById("pop").style.visibility = "hidden";
+        }
+    </script>
 </body>
 </html>
