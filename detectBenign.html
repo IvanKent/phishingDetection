@@ -93,17 +93,18 @@
     <script>
 
         function getContents(){
-            let textbox = document.getElementById('link');
+            let textbox = document.getElementById("link");
             let title = textbox.value;
 
+
                 if(title == "google.com" || title =="youtube.com"){
-                window.open("detectBenign.html");
+                    window.open("detectPhishing.html")
                 }
                 else if(title == ""){
                     window.open("detectInvalid.html");
                 }
                 else{
-                    window.open("detectPhishing.html");
+                    window.open("detectBenign.html");
                 }
         }
 
